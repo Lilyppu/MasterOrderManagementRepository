@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name= "OM_MST_RATE_PARAM_BU2")
+@Table(name= "OM_MST_RATE_PARAM")
 @IdClass(OmMstRateParamCompKey.class)
 public class OmMstRateParam {
 	 	@Id
@@ -48,7 +48,7 @@ public class OmMstRateParam {
 	 	@Id
 	    @Column(name = "OBJ_CATEGORY", length = 100)
 	    private String omrpObjCategory;
-
-	    @Column(name = "RATE_PARAMETER")
-	    private Double omrpRateParameter;
+	 	
+	    @Column(name = "RATE_PARAMETER",precision = 19, scale = 4)
+	    private BigDecimal omrpRateParameter;
 }
