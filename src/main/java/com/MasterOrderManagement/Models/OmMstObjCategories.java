@@ -1,5 +1,7 @@
 package com.MasterOrderManagement.Models;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,12 +35,14 @@ public class OmMstObjCategories {
     private String omocsCreatedBy;
 
     @Column(name = "CREATED_TIMESTAMP", nullable = false)
+    @CreatedDate
     private Date omocsCreatedTimestamp;
 
     @Column(name = "LASTUPDATE_BY", length = 12)
     private String omocsLastUpdateBy;
 
     @Column(name = "LASTUPDATE_TIMESTAMP")
+    @LastModifiedDate
     private Date omocsLastUpdateTimestamp;
 
     @Column(name = "MIN_YEAR")

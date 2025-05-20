@@ -1,5 +1,7 @@
 package com.MasterOrderManagement.Models;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -38,6 +40,7 @@ public class OmMstScoreHouse {
     private Integer omshScore;
 
     @Column(name = "CREATE_BY", nullable = false, length = 12)
+    @CreatedDate
     private String omshCreatedBy;
 
     @Column(name = "CREATE_DATE", nullable = false)
@@ -47,5 +50,6 @@ public class OmMstScoreHouse {
     private String omshUpdateBy;
 
     @Column(name = "UPDATE_DATE")
+    @LastModifiedDate
     private Date omshUpdateDate;
 }

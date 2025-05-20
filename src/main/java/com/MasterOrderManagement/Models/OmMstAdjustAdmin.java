@@ -1,5 +1,7 @@
 package com.MasterOrderManagement.Models;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -38,11 +40,13 @@ public class OmMstAdjustAdmin {
     private String omaaCreatedBy;
 
     @Column(name = "CREATE_DATE", nullable = false)
+    @CreatedDate
     private Date omaaCreateDate;
 
     @Column(name = "UPDATE_BY", length = 12)
     private String omaaUpdateBy;
 
     @Column(name = "UPDATE_DATE")
+    @LastModifiedDate
     private Date omaaUpdateDate;
 }

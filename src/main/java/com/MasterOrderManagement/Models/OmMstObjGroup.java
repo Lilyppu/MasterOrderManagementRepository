@@ -1,5 +1,7 @@
 package com.MasterOrderManagement.Models;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -36,12 +38,14 @@ public class OmMstObjGroup {
     private String omogCreatedBy;
 
     @Column(name = "CREATE_DATE", nullable = false)
+    @CreatedDate
     private Date omogCreateDate;
 
     @Column(name = "UPDATE_BY", length = 12)
     private String omogUpdateBy;
 
     @Column(name = "UPDATE_DATE")
+    @LastModifiedDate
     private Date omogUpdateDate;
 
     @Column(name = "NEED_ADD_COLL_LIMIT")

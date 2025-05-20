@@ -1,5 +1,7 @@
 package com.MasterOrderManagement.Models;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -42,12 +44,14 @@ public class OmMstApprovalId {
     private String omaiCreatedBy;
 
     @Column(name = "CREATE_DATE", nullable = false)
+    @CreatedDate
     private Date omaiCreateDate;
 
     @Column(name = "UPDATE_BY", length = 12)
     private String omaiUpdateBy;
 
     @Column(name = "UPDATE_DATE")
+    @LastModifiedDate
     private Date omaiUpdateDate;
     
     @Id

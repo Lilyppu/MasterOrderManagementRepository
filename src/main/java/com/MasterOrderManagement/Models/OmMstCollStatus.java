@@ -1,5 +1,7 @@
 package com.MasterOrderManagement.Models;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,6 +31,7 @@ public class OmMstCollStatus {
     private String omcsCollDescr;
 
     @Column(name = "CREATED_BY", nullable = false, length = 15)
+    @CreatedDate
     private String omcsCreatedBy;
 
     @Column(name = "CREATED_DATE", nullable = false)
@@ -38,5 +41,6 @@ public class OmMstCollStatus {
     private String omcsUpdateBy;
 
     @Column(name = "UPDATE_DATE")
+    @LastModifiedDate
     private Date omcsUpdateDate;
 }
