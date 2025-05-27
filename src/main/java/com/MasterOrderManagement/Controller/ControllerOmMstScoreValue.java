@@ -11,21 +11,21 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.MasterOrderManagement.Models.OmMstSurveyor;
-import com.MasterOrderManagement.Services.ServiceOmMstSurveyor;
+import com.MasterOrderManagement.Models.OmMstScoreValue;
+import com.MasterOrderManagement.Services.ServiceOmMstScoreValue;
 
 @RestController
-public class ControllerOmMstSurveyor {
+public class ControllerOmMstScoreValue {
 	@Autowired
-	ServiceOmMstSurveyor servOMSV;
+	ServiceOmMstScoreValue servOMSV;
 	
-	@GetMapping("/MasterOrderManagement/getOmsvyAll")
-	public List<OmMstSurveyor> getOmsvyAll(){
-		return servOMSV.getOmsvyAll();
+	@GetMapping("/MasterOrderManagement/getOmsvAll")
+	public List<OmMstScoreValue> getOmsvAll(){
+		return servOMSV.getOmsvAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmsvyBySurvIdCU")
-	public Optional<OmMstSurveyor> getOmsvyBySurvIdCU(String survid){
-		return servOMSV.getOmsvyBySurvIdCU(survid);
+	@GetMapping("/MasterOrderManagement/getOmsvByScoreCodeList")
+	public List<OmMstScoreValue> getOmsvByScoreCodeList(String scorecode){
+		return servOMSV.getOmsvByScoreCodeList(scorecode);
 	}
 }

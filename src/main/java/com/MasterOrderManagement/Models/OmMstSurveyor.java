@@ -25,61 +25,61 @@ import java.math.BigDecimal;
 public class OmMstSurveyor {
 	 	@Id
 	    @Column(name = "SURV_ID", nullable = false, length = 12)
-	    private String omsvSurvId;
+	    private String omsvySurvId;
 
 	    @Column(name = "SURV_DESCR", nullable = false, length = 30)
-	    private String omsvSurvDescr;
+	    private String omsvSurvyDescr;
 	    
 	    @Id
 	    @Column(name = "KOOR_SURV_ID", nullable = false, length = 12)
-	    private String omsvKoorSurvId;
+	    private String omsvyKoorSurvId;
 	    
 	    @Id
 	    @Column(name = "BRANCH_ID", nullable = false, length = 5)
-	    private String omsvBranchId;
+	    private String omsvyBranchId;
 
 	    @Column(name = "NIK", length = 12)
-	    private String omsvNIK;
+	    private String omsvyNIK;
 
 	    @Column(name = "MAX_APPL", nullable = false)
-	    private Integer omsvMaxAppl;
+	    private Integer omsvyMaxAppl;
 	    
 	    @Id
 	    @Column(name = "VISIBLE", length = 1)
-	    private String omsvVisible;
+	    private String omsvyVisible;
 
 	    @Column(name = "CREATE_BY", nullable = false, length = 12)
-	    private String omsvCreatedBy;
+	    private String omsvyCreatedBy;
 
 	    @Column(name = "CREATE_DATE", nullable = false)
 	    @CreatedDate
-	    private Date omsvCreateDate;
+	    private Date omsvyCreateDate;
 
 	    @Column(name = "UPDATE_BY", length = 12)
-	    private String omsvUpdateBy;
+	    private String omsvyUpdateBy;
 
 	    @Column(name = "UPDATE_DATE")
 	    @LastModifiedDate
-	    private Date omsvUpdateDate;
+	    private Date omsvyUpdateDate;
 
 	    @Column(name = "DIST_APPL")
-	    private Integer omsvDistAppl;
+	    private Integer omsvyDistAppl;
 
 	    @Column(name = "ZONE_ID", length = 10)
-	    private String omsvZoneId;
+	    private String omsvyZoneId;
 
 	    @Column(name = "IS_BLOCKED", length = 1)
-	    private String omsvIsBlocked;
+	    private String omsvyIsBlocked;
 
 	    @Column(name = "BLOCKED_BY", length = 20)
-	    private String omsvBlockedBy;
+	    private String omsvyBlockedBy;
 
 	    @Column(name = "BLOCKED_DATE")
-	    private Date omsvBlockedDate;
+	    private Date omsvyBlockedDate;
 
 	    @Column(name = "BUSS_UNIT", length = 5)
-	    private String omsvBussUnit;
+	    private String omsvyBussUnit;
 
 	    @Column(name = "MAX_DATE")
-	    private Date omsvMaxDate;
+	    private Date omsvyMaxDate;
 }

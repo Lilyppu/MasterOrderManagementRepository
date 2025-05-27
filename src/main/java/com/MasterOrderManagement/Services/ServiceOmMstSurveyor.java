@@ -12,13 +12,13 @@ import com.MasterOrderManagement.Repository.IOmMstSurveyorRepository;
 @Service
 public class ServiceOmMstSurveyor {
 	@Autowired
-	IOmMstSurveyorRepository repoOMSV;
+	IOmMstSurveyorRepository repoOMSVY;
 	
-	public List<OmMstSurveyor> getOmsvAll(){
-		return repoOMSV.findAll();
+	public List<OmMstSurveyor> getOmsvyAll(){
+		return repoOMSVY.findAll();
 	}
 	
-	public Optional<OmMstSurveyor> getOmsvBySurvIdtCU(String survid){
-		return repoOMSV.findByOmsvSurvId(survid);
+	public Optional<OmMstSurveyor> getOmsvyBySurvIdCU(String survid){
+		return repoOMSVY.findByOmsvySurvId(survid);
 	}
 }

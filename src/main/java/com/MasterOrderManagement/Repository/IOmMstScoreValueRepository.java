@@ -7,12 +7,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
-import com.MasterOrderManagement.Models.OmMstSurveyor;
-import com.MasterOrderManagement.Models.OmMstSurveyorCompKey;
+import com.MasterOrderManagement.Models.OmMstScoreValue;
+import com.MasterOrderManagement.Models.OmMstScoreValueCompKey;
 
 import jakarta.transaction.Transactional;
-public interface IOmMstSurveyorRepository extends JpaRepository<OmMstSurveyor,OmMstSurveyorCompKey>{
+public interface IOmMstScoreValueRepository extends JpaRepository<OmMstScoreValue,OmMstScoreValueCompKey>{
 	
-	public Optional<OmMstSurveyor> findByOmsvySurvId(String survid);
+	public List<OmMstScoreValue> findByOmsvScoreCodeContaining(String scorecode);
 
 }

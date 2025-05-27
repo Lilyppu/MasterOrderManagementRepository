@@ -14,9 +14,12 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class OmMstSurveyorCompKey implements Serializable {
-	private String omsvySurvId;
-	private String omsvyKoorSurvId;
-	private String omsvyBranchId;
-	private String omsvyVisible;
+public class OmMstProvisiCompKey implements Serializable {
+	private String ompBussUnit;
+	private BigDecimal ompPhStart;
+	private BigDecimal ompPhEnd;
+	private Integer ompTenorStart;
+	private Integer ompTenorEnd;
+	private String ompFlagSoAgen;
+	private String ompFlagRo;
 }
