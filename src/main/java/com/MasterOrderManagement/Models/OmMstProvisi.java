@@ -20,7 +20,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name= "OM_MST_PROVISI_BU")
+@Table(name= "OM_MST_PROVISI")
 @IdClass(OmMstProvisiCompKey.class)
 public class OmMstProvisi {
 	@Id

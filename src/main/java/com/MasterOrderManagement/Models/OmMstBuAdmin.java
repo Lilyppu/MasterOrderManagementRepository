@@ -28,14 +28,14 @@ public class OmMstBuAdmin {
     private String ombaBussUnit;
 	
 	@Id
-    @Column(name = "PRINCIPAL_START")
+    @Column(name = "PRINCIPAL_START",precision = 19, scale = 4)
     private BigDecimal ombaPrincipalStart;
 	
 	@Id
-    @Column(name = "PRINCIPAL_END")
+    @Column(name = "PRINCIPAL_END",precision = 19, scale = 4)
     private BigDecimal ombaPrincipalEnd;
 
-    @Column(name = "ADMIN", nullable = false)
+    @Column(name = "ADMIN", nullable = false,precision = 19, scale = 4)
     private BigDecimal ombaAdmin;
 
     @Column(name = "CREATE_BY", length = 12, nullable = false)
