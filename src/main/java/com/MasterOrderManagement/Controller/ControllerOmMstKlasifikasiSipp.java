@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.MasterOrderManagement.Models.OmMstHouseCategory;
-import com.MasterOrderManagement.Services.ServiceOmMstHouseCategory;
+import com.MasterOrderManagement.Models.OmMstKlasifikasiSipp;
+import com.MasterOrderManagement.Services.ServiceOmMstKlasifikasiSipp;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstHouseCategory {
+public class ControllerOmMstKlasifikasiSipp {
 	@Autowired
-	ServiceOmMstHouseCategory servOMHCA;
+	ServiceOmMstKlasifikasiSipp servOMKSI;
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaAll")
-	public List<OmMstHouseCategory> getOmhcaAll(){
-		return servOMHCA.getOmhcaAll();
+	@GetMapping("/MasterOrderManagement/getOmksiAll")
+	public List<OmMstKlasifikasiSipp> getOmksiAll(){
+		return servOMKSI.getOmksiAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaByHouseCateIdCU")
-	public Optional<OmMstHouseCategory> getOmhcaByHouseCateIdCU(String housecateid){
-		return servOMHCA.getOmhcaByHouseCateIdCU(housecateid);
+	@GetMapping("/MasterOrderManagement/getOmksiByTipePembiayaanList")
+	public List<OmMstKlasifikasiSipp> getOmksiByTipePembiayaanList(String tipepembiayaan){
+		return servOMKSI.getOmksiByTipePembiayaanList(tipepembiayaan);
 	}
 }

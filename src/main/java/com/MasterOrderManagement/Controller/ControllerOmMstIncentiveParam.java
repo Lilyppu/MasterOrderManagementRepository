@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.MasterOrderManagement.Models.OmMstHouseCategory;
-import com.MasterOrderManagement.Services.ServiceOmMstHouseCategory;
+import com.MasterOrderManagement.Models.OmMstIncentiveParam;
+import com.MasterOrderManagement.Services.ServiceOmMstIncentiveParam;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstHouseCategory {
+public class ControllerOmMstIncentiveParam {
 	@Autowired
-	ServiceOmMstHouseCategory servOMHCA;
+	ServiceOmMstIncentiveParam servOMIP;
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaAll")
-	public List<OmMstHouseCategory> getOmhcaAll(){
-		return servOMHCA.getOmhcaAll();
+	@GetMapping("/MasterOrderManagement/getOmipAll")
+	public List<OmMstIncentiveParam> getOmipAll(){
+		return servOMIP.getOmipAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaByHouseCateIdCU")
-	public Optional<OmMstHouseCategory> getOmhcaByHouseCateIdCU(String housecateid){
-		return servOMHCA.getOmhcaByHouseCateIdCU(housecateid);
+	@GetMapping("/MasterOrderManagement/getOmipByParamCodeCU")
+	public Optional<OmMstIncentiveParam> getOmipByParamCodeCU(String paramcode){
+		return servOMIP.getOmipByParamCodeCU(paramcode);
 	}
 }

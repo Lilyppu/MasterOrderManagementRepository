@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.MasterOrderManagement.Models.OmMstHouseCategory;
-import com.MasterOrderManagement.Services.ServiceOmMstHouseCategory;
+import com.MasterOrderManagement.Models.OmMstMandatoryField;
+import com.MasterOrderManagement.Services.ServiceOmMstMandatoryField;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstHouseCategory {
+public class ControllerOmMstMandatoryField {
 	@Autowired
-	ServiceOmMstHouseCategory servOMHCA;
+	ServiceOmMstMandatoryField servOMMF;
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaAll")
-	public List<OmMstHouseCategory> getOmhcaAll(){
-		return servOMHCA.getOmhcaAll();
+	@GetMapping("/MasterOrderManagement/getOmmfAll")
+	public List<OmMstMandatoryField> getOmmfAll(){
+		return servOMMF.getOmmfAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaByHouseCateIdCU")
-	public Optional<OmMstHouseCategory> getOmhcaByHouseCateIdCU(String housecateid){
-		return servOMHCA.getOmhcaByHouseCateIdCU(housecateid);
+	@GetMapping("/MasterOrderManagement/getOmmfByTabelNameList")
+	public List<OmMstMandatoryField> getOmmfByTabelNameList(String tabelname){
+		return servOMMF.getOmmfByTabelNameList(tabelname);
 	}
 }

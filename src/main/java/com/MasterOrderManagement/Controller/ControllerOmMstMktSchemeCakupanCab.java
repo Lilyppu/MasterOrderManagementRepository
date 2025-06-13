@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.MasterOrderManagement.Models.OmMstHouseCategory;
-import com.MasterOrderManagement.Services.ServiceOmMstHouseCategory;
+import com.MasterOrderManagement.Models.OmMstMktSchemeCakupanCab;
+import com.MasterOrderManagement.Services.ServiceOmMstMktSchemeCakupanCab;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstHouseCategory {
+public class ControllerOmMstMktSchemeCakupanCab {
 	@Autowired
-	ServiceOmMstHouseCategory servOMHCA;
+	ServiceOmMstMktSchemeCakupanCab servOMMSCC;
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaAll")
-	public List<OmMstHouseCategory> getOmhcaAll(){
-		return servOMHCA.getOmhcaAll();
+	@GetMapping("/MasterOrderManagement/getOmmsccAll")
+	public List<OmMstMktSchemeCakupanCab> getOmmsccAll(){
+		return servOMMSCC.getOmmsccAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaByHouseCateIdCU")
-	public Optional<OmMstHouseCategory> getOmhcaByHouseCateIdCU(String housecateid){
-		return servOMHCA.getOmhcaByHouseCateIdCU(housecateid);
+	@GetMapping("/MasterOrderManagement/getOmmsccByBranchIdList")
+	public List<OmMstMktSchemeCakupanCab> getOmmsccByBranchIdList(String branchid){
+		return servOMMSCC.getOmmsccByBranchIdList(branchid);
 	}
 }

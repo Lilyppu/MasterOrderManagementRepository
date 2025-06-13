@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.MasterOrderManagement.Models.OmMstHouseCategory;
-import com.MasterOrderManagement.Services.ServiceOmMstHouseCategory;
+import com.MasterOrderManagement.Models.OmMstKoorSurveyor;
+import com.MasterOrderManagement.Services.ServiceOmMstKoorSurveyor;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstHouseCategory {
+public class ControllerOmMstKoorSurveyor {
 	@Autowired
-	ServiceOmMstHouseCategory servOMHCA;
+	ServiceOmMstKoorSurveyor servOMKS;
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaAll")
-	public List<OmMstHouseCategory> getOmhcaAll(){
-		return servOMHCA.getOmhcaAll();
+	@GetMapping("/MasterOrderManagement/getOmksAll")
+	public List<OmMstKoorSurveyor> getOmksAll(){
+		return servOMKS.getOmksAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaByHouseCateIdCU")
-	public Optional<OmMstHouseCategory> getOmhcaByHouseCateIdCU(String housecateid){
-		return servOMHCA.getOmhcaByHouseCateIdCU(housecateid);
+	@GetMapping("/MasterOrderManagement/getOmksByKoorSurvIdCU")
+	public Optional<OmMstKoorSurveyor> getOmksByKoorSurvIdCU(String koorsurvid){
+		return servOMKS.getOmksByKoorSurvIdCU(koorsurvid);
 	}
 }

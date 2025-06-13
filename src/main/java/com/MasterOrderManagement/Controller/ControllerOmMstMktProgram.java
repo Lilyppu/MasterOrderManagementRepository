@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.MasterOrderManagement.Models.OmMstHouseCategory;
-import com.MasterOrderManagement.Services.ServiceOmMstHouseCategory;
+import com.MasterOrderManagement.Models.OmMstMktProgram;
+import com.MasterOrderManagement.Services.ServiceOmMstMktProgram;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstHouseCategory {
+public class ControllerOmMstMktProgram {
 	@Autowired
-	ServiceOmMstHouseCategory servOMHCA;
+	ServiceOmMstMktProgram servOMMP;
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaAll")
-	public List<OmMstHouseCategory> getOmhcaAll(){
-		return servOMHCA.getOmhcaAll();
+	@GetMapping("/MasterOrderManagement/getOmmpAll")
+	public List<OmMstMktProgram> getOmmpAll(){
+		return servOMMP.getOmmpAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmhcaByHouseCateIdCU")
-	public Optional<OmMstHouseCategory> getOmhcaByHouseCateIdCU(String housecateid){
-		return servOMHCA.getOmhcaByHouseCateIdCU(housecateid);
+	@GetMapping("/MasterOrderManagement/getOmmpByProgCodeCU")
+	public Optional<OmMstMktProgram> getOmmpByProgCodeCU(String progcode){
+		return servOMMP.getOmmpByProgCodeCU(progcode);
 	}
 }
