@@ -51,4 +51,7 @@ public class OmMstCollProcess {
     @Id
     @Column(name = "OBJ_GRP", nullable = false, length = 10)
     private String omcpObjGrp;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omcpCompId;
 }

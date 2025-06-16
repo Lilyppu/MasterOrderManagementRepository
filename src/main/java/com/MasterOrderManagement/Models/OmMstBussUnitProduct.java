@@ -35,4 +35,7 @@ public class OmMstBussUnitProduct {
 
     @Column(name = "CATEGORY", length = 100)
     private String ombupCategory;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String ombupCompId;
 }

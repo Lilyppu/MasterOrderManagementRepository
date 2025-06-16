@@ -50,4 +50,7 @@ public class OmMstCollSublocDetail {
 
 	@Column(name = "VISIBLE", length = 1)
 	private String omcsdVisible;
+	
+	@Column(name = "COMP_ID", length = 5)
+	private String omcsdCompId;
 }

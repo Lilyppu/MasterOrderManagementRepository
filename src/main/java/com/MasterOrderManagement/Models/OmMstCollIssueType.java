@@ -58,4 +58,7 @@ public class OmMstCollIssueType {
 
     @Column(name = "VISIBLE", length = 1, columnDefinition = "VARCHAR2(1 BYTE) DEFAULT 'Y'")
     private String omcitVisible;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omcitCompId;
 }

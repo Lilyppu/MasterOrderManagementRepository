@@ -58,4 +58,7 @@ public class OmMstCategoryDealer {
     @Column(name = "UPDATED_TIMESTAMP")
     @LastModifiedDate
     private Date omcdUpdatedTimestamp;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omcdCompId;
 }

@@ -51,4 +51,7 @@ public class OmMstDocUpload {
     @Column(name = "UPDATED_DATE")
     @LastModifiedDate
     private Date omduUpdatedDate;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omduCompId;
 }

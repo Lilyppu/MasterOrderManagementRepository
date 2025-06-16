@@ -50,4 +50,7 @@ public class OmMstCollSubLocation {
 	@Id
 	@Column(name = "SUB_LOC_BRANCH", length = 5)
 	private String omcslSubLocBranch;
+	
+	@Column(name = "COMP_ID", length = 5)
+	private String omcslCompId;
 }

@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.MasterOrderManagement.Models.OmMstCollProcess;
-import com.MasterOrderManagement.Services.ServiceOmMstCollProcess;
+import com.MasterOrderManagement.Models.OmMstAdminStnk;
+import com.MasterOrderManagement.Services.ServiceOmMstAdminStnk;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstCollProcess {
+public class ControllerOmMstAdminStnk {
 	@Autowired
-	ServiceOmMstCollProcess servOMCP;
+	ServiceOmMstAdminStnk servOMAS;
 	
-	@GetMapping("/MasterOrderManagement/getOmcpAll")
-	public List<OmMstCollProcess> getOmcpAll(){
-		return servOMCP.getOmcpAll();
+	@GetMapping("/MasterOrderManagement/getOmasAll")
+	public List<OmMstAdminStnk> getOmasAll(){
+		return servOMAS.getOmasAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmcpBySuplCodeCU")
-	public Optional<OmMstCollProcess> getOmcpBySuplCodeCU(String suplcode){
-		return servOMCP.getOmcpBySuplCodeCU(suplcode);
+	@GetMapping("/MasterOrderManagement/getOmasBySupplCodeCU")
+	public Optional<OmMstAdminStnk> getOmasBySupplCodeCU(String supplcode){
+		return servOMAS.getOmasBySupplCodeCU(supplcode);
 	}
 }

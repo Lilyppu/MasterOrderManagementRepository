@@ -51,4 +51,7 @@ public class OmMstBuAdmin {
     @Column(name = "UPDATE_DATE")
     @LastModifiedDate
     private Date ombaUpdateDate;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String ombaCompId;
 }

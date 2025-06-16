@@ -49,4 +49,7 @@ public class OmMstAdjustAdmin {
     @Column(name = "UPDATE_DATE")
     @LastModifiedDate
     private Date omaaUpdateDate;
+    
+    @Column(name = "COMP_ID", nullable = false, length = 5)
+    private String omaaCompId;
 }

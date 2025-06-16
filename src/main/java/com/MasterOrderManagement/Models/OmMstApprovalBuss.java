@@ -45,4 +45,7 @@ public class OmMstApprovalBuss {
     @Column(name = "UPDATE_DATE")
     @LastModifiedDate
     private Date omabUpdateDate;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omabCompId;
 }

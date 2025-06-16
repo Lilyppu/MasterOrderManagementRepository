@@ -57,4 +57,7 @@ public class OmMstApprovalId {
     @Id
     @Column(name = "METHOD_ID", length = 5)
     private String omaiMethodId;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omaiCompId;
 }

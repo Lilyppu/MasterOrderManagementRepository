@@ -58,4 +58,7 @@ public class OmMstApprovalMethod {
 
     @Column(name = "DESCRIPTION", length = 200)
     private String omamDescription;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omamCompId;
 }

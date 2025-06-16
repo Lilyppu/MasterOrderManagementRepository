@@ -47,4 +47,7 @@ public class OmMstCollType {
 
     @Column(name = "IS_COLLATERAL", length = 1)
     private String omctIsCollateral;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omctCompId;
 }
