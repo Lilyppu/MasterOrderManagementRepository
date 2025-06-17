@@ -98,4 +98,7 @@ public class OmMstObjCode {
 
 	    @Column(name = "RAKITAN", length = 1)
 	    private String omocRakit;
+	    
+	    @Column(name = "COMP_ID", length = 5)
+	    private String omocCompId;
 }

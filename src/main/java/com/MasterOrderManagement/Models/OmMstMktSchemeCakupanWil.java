@@ -44,4 +44,7 @@ public class OmMstMktSchemeCakupanWil {
     @Id
     @Column(name = "MS_CODE", nullable = false, length = 9)
     private String ommscwMsCode;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String ommscwCompId;
 }

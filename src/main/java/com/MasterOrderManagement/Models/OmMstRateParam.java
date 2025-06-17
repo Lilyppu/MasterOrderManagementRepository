@@ -53,4 +53,7 @@ public class OmMstRateParam {
 	 	
 	    @Column(name = "RATE_PARAMETER",precision = 19, scale = 4)
 	    private BigDecimal omrpRateParameter;
+	    
+	    @Column(name = "COMP_ID", length = 5)
+	    private String omrpCompId;
 }

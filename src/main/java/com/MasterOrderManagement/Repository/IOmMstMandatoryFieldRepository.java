@@ -13,6 +13,6 @@ import com.MasterOrderManagement.Models.OmMstMandatoryFieldCompKey;
 import jakarta.transaction.Transactional;
 public interface IOmMstMandatoryFieldRepository extends JpaRepository<OmMstMandatoryField,OmMstMandatoryFieldCompKey>{
 	
-	public List<OmMstMandatoryField> findByOmmfTabelNameContaining(String tabelname);
+	public List<OmMstMandatoryField> findByOmmfdTabelNameContaining(String tabelname);
 
 }

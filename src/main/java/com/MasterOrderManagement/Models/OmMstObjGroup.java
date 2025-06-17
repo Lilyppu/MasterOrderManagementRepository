@@ -56,4 +56,7 @@ public class OmMstObjGroup {
 
     @Column(name = "VISIBLE", nullable = false, length = 1)
     private String omogVisible;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omogCompId;
 }

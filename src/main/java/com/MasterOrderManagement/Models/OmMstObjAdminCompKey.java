@@ -14,7 +14,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class OmMstMandatoryFieldCompKey implements Serializable {
-	private String ommfdTabelName;
-	private String ommfdFieldName;
+public class OmMstObjAdminCompKey implements Serializable {
+	private Integer omoaTopId;
+	private String omoaFeeId;
+	private String omoaBussUnit;
 }

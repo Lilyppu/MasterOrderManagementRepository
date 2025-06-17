@@ -20,31 +20,41 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name= "OM_MST_OBJ_WARNA")
-@IdClass(OmMstObjWarnaCompKey.class)
-public class OmMstObjWarna {
+@Table(name= "OM_MST_OBJ_ADMIN")
+@IdClass(OmMstObjAdminCompKey.class)
+public class OmMstObjAdmin {
 	@Id
-    @Column(name = "OBJ_WARNA", nullable = false, length = 50)
-    private String omowObjWarna;
+    @Column(name = "TOP_ID")
+    private Integer omoaTopId;
+	
+	@Id
+    @Column(name = "FEE_ID", nullable = false, length = 15)
+    private String omoaFeeId;
+
+    @Column(name = "FEE_DESCRIPTION", length = 50)
+    private String omoaFeeDescription;
+
+    @Column(name = "FEE_AMOUNT", precision = 19, scale = 4)
+    private BigDecimal omoaFeeAmount;
 
     @Column(name = "CREATED_BY", nullable = false, length = 15)
-    private String omowCreatedBy;
+    private String omoaCreatedBy;
 
     @Column(name = "CREATED_TIMESTAMP", nullable = false)
     @CreatedDate
-    private Date omowCreatedTimestamp;
+    private Date omoaCreatedTimestamp;
 
     @Column(name = "LASTUPDATE_BY", length = 15)
-    private String omowLastupdateBy;
+    private String omoaLastupdateBy;
 
     @Column(name = "LASTUPDATE_TIMESTAMP")
     @LastModifiedDate
-    private Date omowLastupdateTimestamp;
+    private Date omoaLastupdateTimestamp;
     
     @Id
-    @Column(name = "OBJ_GRP", nullable = false, length = 10)
-    private String omowObjGrp;
-    
+    @Column(name = "BUSS_UNIT", length = 20)
+    private String omoaBussUnit;
+
     @Column(name = "COMP_ID", length = 5)
-    private String omowCompId;
+    private String omoaCompId;
 }

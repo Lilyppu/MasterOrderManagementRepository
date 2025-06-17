@@ -61,4 +61,7 @@ public class OmMstMktProgram {
 
     @Column(name = "POT_MONTH_INST")
     private Integer ommpPotMonthInst;
+    
+    @Column(name = "COMP_ID", length = 15)
+    private String ommpCompId;
 }

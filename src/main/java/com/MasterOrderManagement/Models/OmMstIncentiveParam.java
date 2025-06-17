@@ -61,4 +61,7 @@ public class OmMstIncentiveParam {
 
     @Column(name = "CUST_TYPE", length = 1)
     private String omipCustType;
+    
+    @Column(name = "COMP_ID", length = 15)
+    private String omipCompId;
 }

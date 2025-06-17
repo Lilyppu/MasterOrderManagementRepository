@@ -72,4 +72,7 @@ public class OmMstObjPrice {
 
 	    @Column(name = "PENDAPATAN",precision = 19, scale = 4)
 	    private BigDecimal omopPendapatan;
+	    
+	    @Column(name = "COMP_ID", length = 5)
+	    private String omopCompId;
 }

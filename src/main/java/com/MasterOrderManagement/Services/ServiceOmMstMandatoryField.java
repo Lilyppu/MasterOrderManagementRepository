@@ -12,13 +12,13 @@ import com.MasterOrderManagement.Repository.IOmMstMandatoryFieldRepository;
 @Service
 public class ServiceOmMstMandatoryField {
 	@Autowired
-	IOmMstMandatoryFieldRepository repoOMMF;
+	IOmMstMandatoryFieldRepository repoOMMFD;
 	
-	public List<OmMstMandatoryField> getOmmfAll(){
-		return repoOMMF.findAll();
+	public List<OmMstMandatoryField> getOmmfdAll(){
+		return repoOMMFD.findAll();
 	}
 	
-	public List<OmMstMandatoryField> getOmmfByTabelNameList(String tabelname){
-		return repoOMMF.findByOmmfTabelNameContaining(tabelname);
+	public List<OmMstMandatoryField> getOmmfdByTabelNameList(String tabelname){
+		return repoOMMFD.findByOmmfdTabelNameContaining(tabelname);
 	}
 }

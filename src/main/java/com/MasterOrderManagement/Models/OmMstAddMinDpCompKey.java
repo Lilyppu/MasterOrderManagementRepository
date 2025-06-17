@@ -14,7 +14,10 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class OmMstMandatoryFieldCompKey implements Serializable {
-	private String ommfdTabelName;
-	private String ommfdFieldName;
+public class OmMstAddMinDpCompKey implements Serializable {
+	private String omamdBussUnit;
+	private String omamdBpkbRelation;
+	private String omamdObjCategory;
+	private Double omamdPctF6pdo31rwStart;
+	private Double omamdPctF6pdo31rwEnd;
 }

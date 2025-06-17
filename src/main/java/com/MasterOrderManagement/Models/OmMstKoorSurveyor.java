@@ -61,4 +61,7 @@ public class OmMstKoorSurveyor {
 
     @Column(name = "LOH_ID", length = 12)
     private String omksLohId;
+    
+    @Column(name = "COMP_ID", length = 15)
+    private String omksCompId;
 }

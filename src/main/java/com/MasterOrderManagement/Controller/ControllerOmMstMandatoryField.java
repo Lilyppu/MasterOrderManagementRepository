@@ -19,15 +19,15 @@ import com.MasterOrderManagement.Services.ServiceOmMstMandatoryField;
 @RestController
 public class ControllerOmMstMandatoryField {
 	@Autowired
-	ServiceOmMstMandatoryField servOMMF;
+	ServiceOmMstMandatoryField servOMMFD;
 	
-	@GetMapping("/MasterOrderManagement/getOmmfAll")
-	public List<OmMstMandatoryField> getOmmfAll(){
-		return servOMMF.getOmmfAll();
+	@GetMapping("/MasterOrderManagement/getOmmfdAll")
+	public List<OmMstMandatoryField> getOmmfdAll(){
+		return servOMMFD.getOmmfdAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmmfByTabelNameList")
-	public List<OmMstMandatoryField> getOmmfByTabelNameList(String tabelname){
-		return servOMMF.getOmmfByTabelNameList(tabelname);
+	@GetMapping("/MasterOrderManagement/getOmmfdByTabelNameList")
+	public List<OmMstMandatoryField> getOmmfdByTabelNameList(String tabelname){
+		return servOMMFD.getOmmfdByTabelNameList(tabelname);
 	}
 }

@@ -51,4 +51,7 @@ public class OmMstObjModel {
 
 	    @Column(name = "TYPE_ID", length = 10)
 	    private String omomTypeId;
+	    
+	    @Column(name = "COMP_ID", length = 5)
+	    private String omomCompId;
 }

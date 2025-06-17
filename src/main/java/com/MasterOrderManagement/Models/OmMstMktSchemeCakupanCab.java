@@ -47,4 +47,7 @@ public class OmMstMktSchemeCakupanCab {
 
     @Column(name = "REGIONAL_ID", nullable = false, length = 5)
     private String ommsccRegionalId;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String ommsccCompId;
 }

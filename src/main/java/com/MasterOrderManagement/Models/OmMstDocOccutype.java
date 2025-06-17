@@ -57,4 +57,7 @@ public class OmMstDocOccutype {
 
     @Column(name = "PENDING", length = 1)
     private String omdoPending;
+    
+    @Column(name = "COMP_ID", length = 15)
+    private String omdoCompId;
 }

@@ -50,4 +50,7 @@ public class OmMstObjBrand {
 
     @Column(name = "OBJ_MAKE", length = 20)
     private String omobObjMake;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omobCompId;
 }

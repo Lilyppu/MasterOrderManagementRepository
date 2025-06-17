@@ -73,4 +73,7 @@ public class OmMstHierarchies {
 	@Id
 	@Column(name = "BUSS_UNIT", length = 50)
 	private String omhBussUnit;
+	
+	@Column(name = "COMP_ID", length = 15)
+	private String omhCompId;
 }

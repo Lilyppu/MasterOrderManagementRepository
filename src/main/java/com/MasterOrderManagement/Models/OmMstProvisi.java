@@ -79,4 +79,7 @@ public class OmMstProvisi {
 
     @Column(name = "PCT_DP",precision = 19, scale = 4)
     private BigDecimal ompPctDp;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String ompCompId;
 }

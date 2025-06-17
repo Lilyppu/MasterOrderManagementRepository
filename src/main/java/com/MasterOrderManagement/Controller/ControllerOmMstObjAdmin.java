@@ -6,28 +6,28 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.MasterOrderManagement.Models.OmMstDeviasi;
-import com.MasterOrderManagement.Services.ServiceOmMstDeviasi;
+import com.MasterOrderManagement.Models.OmMstObjAdmin;
+import com.MasterOrderManagement.Services.ServiceOmMstObjAdmin;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class ControllerOmMstDeviasi {
+public class ControllerOmMstObjAdmin {
 	@Autowired
-	ServiceOmMstDeviasi servOMDE;
+	ServiceOmMstObjAdmin servOMOA;
 	
-	@GetMapping("/MasterOrderManagement/getOmdeAll")
-	public List<OmMstDeviasi> getOmdeAll(){
-		return servOMDE.getOmdeAll();
+	@GetMapping("/MasterOrderManagement/getOmoaAll")
+	public List<OmMstObjAdmin> getOmoaAll(){
+		return servOMOA.getOmoaAll();
 	}
 	
-	@GetMapping("/MasterOrderManagement/getOmdeByNumCU")
-	public Optional<OmMstDeviasi> getOmdeByNumCU(Integer num){
-		return servOMDE.getOmdeByNumCU(num);
+	@GetMapping("/MasterOrderManagement/getOmoaByFeeIdCU")
+	public Optional<OmMstObjAdmin> getOmoaByFeeIdCU(String feeid){
+		return servOMOA.getOmoaByFeeIdCU(feeid);
 	}
 }

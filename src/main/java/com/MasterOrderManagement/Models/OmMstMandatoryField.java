@@ -25,28 +25,31 @@ import java.math.BigDecimal;
 public class OmMstMandatoryField {
 
 	@Column(name = "DESCRIPTION", length = 200)
-	private String ommfDescription;
+	private String ommfdDescription;
 
 	@Id
 	@Column(name = "TABEL_NAME", nullable = false, length = 200)
-	private String ommfTabelName;
+	private String ommfdTabelName;
 
 	@Id
 	@Column(name = "FIELD_NAME", nullable = false, length = 200)
-	private String ommfFieldName;
+	private String ommfdFieldName;
 
 	@Column(name = "VISIBLE", length = 1)
-	private String ommfVisible;
+	private String ommfdVisible;
 
 	@Column(name = "VALIDATION_FLAG", length = 1)
-	private String ommfValidationFlag;
+	private String ommfdValidationFlag;
 
 	@Column(name = "LOV_STAT", length = 500)
-	private String ommfLovStat;
+	private String ommfdLovStat;
 
 	@Column(name = "CUST_TABLE_NAME", length = 200)
-	private String ommfCustTableName;
+	private String ommfdCustTableName;
 
 	@Column(name = "CUST_FIELD_NAME", length = 200)
-	private String ommfCustFieldName;
+	private String ommfdCustFieldName;
+	
+	@Column(name = "COMP_ID", length = 15)
+	private String ommfdCompId;
 }

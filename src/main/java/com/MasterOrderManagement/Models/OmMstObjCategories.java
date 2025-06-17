@@ -47,4 +47,7 @@ public class OmMstObjCategories {
 
     @Column(name = "MIN_YEAR")
     private Integer omocsMinYear;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omocsCompId;
 }

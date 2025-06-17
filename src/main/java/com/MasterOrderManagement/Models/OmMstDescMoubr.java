@@ -29,4 +29,7 @@ public class OmMstDescMoubr {
     @Id
     @Column(name = "VALUE", nullable = false)
     private Integer omdmValue;
+    
+    @Column(name = "COMP_ID", length = 15)
+    private String omdmCompId;
 }
