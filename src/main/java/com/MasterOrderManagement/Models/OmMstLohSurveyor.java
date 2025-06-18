@@ -57,6 +57,6 @@ public class OmMstLohSurveyor {
 	    @Column(name = "BLOCKED_DESCR", length = 30)
 	    private String omlsBlockedDescr;
 	    
-	    @Column(name = "COMP_ID", length = 15)
+	    @Column(name = "COMP_ID", length = 5)
 	    private String omlsCompId;
 }

@@ -52,4 +52,7 @@ public class OmMstScoreHouse {
     @Column(name = "UPDATE_DATE")
     @LastModifiedDate
     private Date omshUpdateDate;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omshCompId;
 }

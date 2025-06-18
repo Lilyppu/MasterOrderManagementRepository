@@ -50,6 +50,6 @@ public class OmMstMandatoryField {
 	@Column(name = "CUST_FIELD_NAME", length = 200)
 	private String ommfdCustFieldName;
 	
-	@Column(name = "COMP_ID", length = 15)
+	@Column(name = "COMP_ID", length = 5)
 	private String ommfdCompId;
 }

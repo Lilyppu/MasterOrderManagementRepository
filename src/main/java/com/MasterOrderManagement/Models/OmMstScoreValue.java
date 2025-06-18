@@ -68,4 +68,7 @@ public class OmMstScoreValue {
     @Id
     @Column(name = "PLATFORM_ID", length = 1, columnDefinition = "VARCHAR2(1 BYTE) DEFAULT 'K'")
     private String omsvPlatformId;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omsvCompId;
 }

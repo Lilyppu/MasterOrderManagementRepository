@@ -69,6 +69,6 @@ public class OmMstCollTypeFields {
 	@Column(name = "IS_VISIBLE")
 	private Integer omctfIsVisible;
 	
-	@Column(name = "COMP_ID", length = 12)
+	@Column(name = "COMP_ID", length = 5)
 	private String omctfCompId;
 }

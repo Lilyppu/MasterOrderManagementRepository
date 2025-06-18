@@ -58,6 +58,6 @@ public class OmMstKlasifikasiSipp {
     @Column(name = "MAX_TENOR")
     private Integer omksiMaxTenor;
     
-    @Column(name = "COMP_ID", length = 15)
+    @Column(name = "COMP_ID", length = 5)
     private String omksiCompId;
 }

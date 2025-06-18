@@ -82,4 +82,7 @@ public class OmMstSurveyor {
 
 	    @Column(name = "MAX_DATE")
 	    private Date omsvyMaxDate;
+	    
+	    @Column(name = "COMP_ID", length = 5)
+	    private String omsvyCompId;
 }

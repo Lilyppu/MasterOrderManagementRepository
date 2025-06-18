@@ -49,4 +49,7 @@ public class OmMstSektorEkonomi {
 
     @Column(name = "OJK_CODE", length = 30)
     private String omseOjkCode;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omseCompId;
 }

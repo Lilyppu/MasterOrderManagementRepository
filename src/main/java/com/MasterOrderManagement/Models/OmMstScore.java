@@ -64,4 +64,7 @@ public class OmMstScore {
 
     @Column(name = "PARAMETER2", length = 500)
     private String omsParameter2;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omsCompId;
 }

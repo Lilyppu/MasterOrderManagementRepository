@@ -58,4 +58,7 @@ public class OmMstSourceOrder {
 
     @Column(name = "WITH_AGENT", length = 5)
     private String omsoWithAgent;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omsoCompId;
 }

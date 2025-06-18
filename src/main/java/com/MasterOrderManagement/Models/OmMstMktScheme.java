@@ -206,6 +206,6 @@ public class OmMstMktScheme {
     @Column(name = "MS_LB_EXT", length = 1)
     private String ommsMsLbExt;
 
-    @Column(name = "COMP_ID", length = 6)
+    @Column(name = "COMP_ID", length = 5)
     private String ommsCompId;
 }

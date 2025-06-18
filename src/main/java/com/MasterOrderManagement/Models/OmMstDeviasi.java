@@ -71,6 +71,6 @@ public class OmMstDeviasi {
     @Column(name = "DEV_HIDE_BU", length = 100)
     private String omdeDevHideBu;
     
-    @Column(name = "COMP_ID", length = 15)
+    @Column(name = "COMP_ID", length = 5)
     private String omdeCompId;
 }

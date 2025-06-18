@@ -78,4 +78,7 @@ public class OmMstObjPriceDtls {
 
     @Column(name = "MIN_RATE",precision = 19, scale = 4)
     private BigDecimal omopdMinRate;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omopdCompId;
 }

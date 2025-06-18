@@ -43,4 +43,7 @@ public class OmMstSegmentDealer {
     @Column(name = "UPDATE_DATE")
     @LastModifiedDate
     private Date omsdUpdateDate;
+    
+    @Column(name = "COMP_ID", length = 5)
+    private String omsdCompId;
 }

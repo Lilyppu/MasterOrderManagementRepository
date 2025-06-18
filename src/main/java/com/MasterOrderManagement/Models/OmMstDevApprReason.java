@@ -36,6 +36,6 @@ public class OmMstDevApprReason {
     @Column(name = "IS_ACTIVE", length = 1)
     private String omdarIsActive;
     
-    @Column(name = "COMP_ID", length = 15)
+    @Column(name = "COMP_ID", length = 5)
     private String omdarCompId;
 }

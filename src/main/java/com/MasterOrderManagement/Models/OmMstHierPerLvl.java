@@ -91,6 +91,6 @@ public class OmMstHierPerLvl {
     @Column(name = "IS_STOPPER", length = 2, columnDefinition = "VARCHAR2(2 BYTE) DEFAULT 'N'")
     private String omhplIsStopper;
     
-    @Column(name = "COMP_ID", length = 15)
+    @Column(name = "COMP_ID", length = 5)
     private String omhplCompId;
 }

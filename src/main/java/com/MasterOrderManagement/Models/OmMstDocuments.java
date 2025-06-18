@@ -44,6 +44,6 @@ public class OmMstDocuments {
     @LastModifiedDate
     private Date omdUpdateDate;
     
-    @Column(name = "COMP_ID", length = 15)
+    @Column(name = "COMP_ID", length = 5)
     private String omdCompId;
 }

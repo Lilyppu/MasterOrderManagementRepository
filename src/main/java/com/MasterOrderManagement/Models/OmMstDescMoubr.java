@@ -30,6 +30,6 @@ public class OmMstDescMoubr {
     @Column(name = "VALUE", nullable = false)
     private Integer omdmValue;
     
-    @Column(name = "COMP_ID", length = 15)
+    @Column(name = "COMP_ID", length = 5)
     private String omdmCompId;
 }

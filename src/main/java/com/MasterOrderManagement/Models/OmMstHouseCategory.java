@@ -47,6 +47,6 @@ public class OmMstHouseCategory {
     @LastModifiedDate
     private Date omhcaUpdatedTimestamp;
     
-    @Column(name = "COMP_ID", length = 15)
+    @Column(name = "COMP_ID", length = 5)
     private String omhcaCompId;
 }
